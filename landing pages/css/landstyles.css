@@ -7,8 +7,12 @@
   /* font-size: 6.25%; */
   /* ========= Defining colors */
   --primary-color: #78350f;
+  --secondary-color: #fbbf24;
   --text-color: #0f172a;
   --background-color: #fefaea;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -31,6 +35,7 @@ body {
 h1 {
   font-size: 72px;
   font-weight: 900;
+  color: var(--text-color);
 }
 h2 {
   font-size: 56px;
@@ -67,7 +72,63 @@ h2 {
   font-weight: ;
 }
 .links .linkbtn1 {
-  border: 1px solid var(--primary-color);
-  padding: 8px 16px;
+  border: 2px solid var(--primary-color);
+  padding: 10px 16px;
   border-radius: 8px;
+}
+/* =====styling Hero section */
+.herosec {
+  padding: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.herosec .col1 {
+  line-height: 1.15;
+}
+
+.col1 p {
+  max-width: 714px;
+  color: var(--text-color);
+}
+.col1 .btns {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.btns .sign {
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+.btns .watch {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.col2 {
+  /* background-color: var(--secondary-color); */
+}
+.col2 .gold {
+  background-color: var(--secondary-color);
+  width: 367px;
+  height: 372px;
+  border-radius: 40px;
+  position: absolute;
+  z-index: -1;
+  margin: 20px;
+}
+/* ======styling vect sections ======= */
+.vectsec {
+  color: var(--text-color);
+  display: flex;
+  gap: 80px;
+  padding: 80px;
+  line-height: 1;
+}
+.vectsec p {
+  max-width: 373px;
+  line-height: 1.5;
 }
