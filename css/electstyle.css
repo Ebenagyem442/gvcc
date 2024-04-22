@@ -1,0 +1,117 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #53cbff;
+  --color-secondary: #ebf3ff;
+  --color-accent: #345f9f;
+  --color-headings: #1b0760;
+  --color-body: rgba(0, 0, 0, 0.45);
+  font-size: 6.25%;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #d2e2fb;
+  /* margin: 0; */
+}
+h3 {
+  font-size: 20rem;
+}
+nav {
+  background-color: #fff;
+  padding-left: 50rem;
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+}
+nav h3 a {
+  text-decoration: none;
+}
+.form {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.address {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 70vw;
+  height: 70vh;
+}
+
+.address .Addy {
+  text-align: center;
+  background-color: var(--color-secondary);
+  color: var(--color-accent);
+  width: inherit;
+}
+.address .addrey {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+/*.addrey*/
+input {
+  width: 800px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.address .residence {
+  /* height: 40vh; */
+  display: block;
+  /* border: 1px solid gray; */
+  width: 70vw;
+  padding: 25rem 15rem;
+}
+
+.residence p {
+  font-size: 15rem;
+  text-align: left;
+}
+.residence form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.address .btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  padding-right: 15rem;
+  background-color: #f0f6ff;
+  width: inherit;
+}
+button {
+  width: 100px;
+  height: 40px;
+  margin: 5px;
+  font-size: 15px;
+}
+.btns .btn1 {
+  background-color: rgb(216, 234, 249);
+  border: 0;
+  border-radius: 8px;
+  color: #345f9f;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.45);
+}
+.btns .btn2 {
+  background-color: rgb(216, 234, 249);
+  border: 0;
+  background-color: #2ab0f8;
+  box-shadow: 1px 2px 5px 3px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
