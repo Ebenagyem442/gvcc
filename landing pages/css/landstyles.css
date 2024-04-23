@@ -45,6 +45,7 @@ h2 {
 /* ======== styling NAVBAR ======= */
 .header {
   padding: 24px 80px;
+  background-color: var(--background-color);
   color: var(--primary-color);
   display: flex;
   justify-content: space-between;
@@ -70,10 +71,22 @@ h2 {
   text-decoration: none;
   color: var(--primary-color);
 }
+.links a:hover {
+  border: 3px;
+  border-bottom: 5px solid var(--primary-color);
+  padding-bottom: 10px;
+}
 .links .linkbtn1 {
   border: 2px solid var(--primary-color);
   padding: 10px 16px;
   border-radius: 8px;
+}
+.linkbtn1:hover {
+  a {
+    color: #fff;
+  }
+  color: #fff;
+  background-color: var(--primary-color);
 }
 /* =====styling Hero section */
 .herosec {
@@ -97,6 +110,20 @@ h2 {
   color: var(--primary-color);
   font-weight: 700;
 }
+.btns a {
+  color: var(--primary-color);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+.btns .col1btnlk:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+.btns .col1btnlk2:hover {
+  color: #95471a;
+  transform: scale(1.02);
+}
 .btns .sign {
   border: 2px solid var(--primary-color);
   border-radius: 8px;
@@ -107,8 +134,8 @@ h2 {
   align-items: center;
   gap: 5px;
 }
-.col2 {
-  /* background-color: var(--secondary-color); */
+.col2 img {
+  transition: all ease 0.5s;
 }
 .col2 .gold {
   background-color: var(--secondary-color);
@@ -118,6 +145,9 @@ h2 {
   position: absolute;
   z-index: -1;
   margin: 20px;
+}
+.col2 img:hover {
+  transform: perspective(500px) rotateY(20deg);
 }
 /* ======styling vect sections ======= */
 .vectsec {
@@ -173,6 +203,12 @@ h2 {
   color: #fff;
   text-decoration: none;
 }
+.btnlink:hover {
+  a {
+    color: var(--secondary-color);
+  }
+  border: 2px solid var(--secondary-color);
+}
 .cards {
   display: flex;
   align-items: center;
@@ -186,6 +222,13 @@ h2 {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 -2px 15px rgba(255, 255, 255, 0.07);
+  transition: all ease-in 0.3s;
+}
+.cards .cd1:hover,
+.cd2:hover,
+.cd3:hover {
+  box-shadow: 0 -2px 15px rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
 }
 .cd1,
 .cd2,
@@ -213,4 +256,9 @@ h2 {
   align-items: center;
   gap: 15px;
   text-decoration: none;
+  transition: all ease 0.5s;
+}
+.cdbtn a:hover {
+  background-color: #152037;
+  font-size: 20px;
 }
